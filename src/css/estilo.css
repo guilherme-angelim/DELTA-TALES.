@@ -165,7 +165,7 @@ header nav ul li a {
 }
 
 #recepcao{
-    font-size: 2.2rem;
+    font-size: 4rem;
     margin: 10%;
     display: flex;
     justify-content: center;
@@ -188,7 +188,7 @@ header nav ul li a {
 
 
 h2 {
-   color:white;
+   color:rgb(255, 255, 255);
 }
 
 h2 span{
@@ -197,6 +197,7 @@ h2 span{
 
 p{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size:1.3rem;
 }
 
 span{
@@ -260,9 +261,55 @@ footer ul li a{
         justify-content: center;
     }
 
-    #titulo {
-        margin: 0 auto;
-        font-size: 2rem;
+    header{
+        flex-direction:column;
     }
+
+    .header-font{
+        flex-direction: column;
+        gap:8px;
+    }
+
+    #recepcao{
+        font-size:3.5rem;
+        margin:40px 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #recepcao span{
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .texto{
+        font-size:1.4rem;
+    }
+    .personagem{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personagem img{
+        width: 130%;
+        height: 700px;
+        align-items: center;
+    }
+
+    footer{
+        display:flex;
+        flex:1;
+    }
+    .footer-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    
 }
 
