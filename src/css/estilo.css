@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 
+@font-face {
+    font-family: 'DeterminationMono';
+    src: url('../fonts/DeterminationMono.ttf') format('truetype');
+  }
 
 *{
 margin:0;
@@ -71,7 +75,9 @@ header.scrolled .header-font {
     object-fit: cover;
     transition: all 0.3s ease;
 }
-
+.header-font li a{
+    font-family: 'DeterminationMono', monospace;
+}
 header.scrolled #home img{
     height:0;
     opacity: 0;
@@ -84,7 +90,7 @@ header nav ul {
     margin: 10px;
     display: flex;
     gap: 80px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Determination Mono;
 }
 
 header nav ul li a {
@@ -101,7 +107,7 @@ header nav ul li a {
     color: rgb(21, 220, 255);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
-    text-shadow:rgb(21, 220, 255); ;
+    text-shadow:rgb(21, 220, 255);
 
 }
 
@@ -109,6 +115,7 @@ header nav ul li a {
     color: rgb(36, 180, 0);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
+    text-shadow:rgb(36, 180, 0);
 
 }
 
@@ -116,18 +123,21 @@ header nav ul li a {
     color: rgb(223, 0, 204);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
+    text-shadow:rgb(223, 0, 204);
 }
 
 #lancer:hover {
     color: rgb(0, 38, 255);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
+    text-shadow:rgb(0, 38, 255);
 }
 
 #noelle:hover {
     color: #D37D55;
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
+    text-shadow:#D37D55;
 }
 
 
