@@ -209,16 +209,11 @@ h2 span{
 }
 .personagem img{
     justify-content: center;
-    width: 130%;
+    width: 100%;
     align-items: center;
     height: auto;
 }
 
-.texto {
-    
-    color: rgb(255, 255, 255);
-    padding: 60px;
-}
 
 footer{
     background-color: rgba(0, 0, 0, 0.7);
