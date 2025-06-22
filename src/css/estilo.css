@@ -32,6 +32,7 @@ body {
     text-align: center;
     display:flex;
     flex-direction:column;
+    overflow-x: hidden;
   }
 
   #container {
@@ -261,6 +262,12 @@ footer ul li a{
         justify-content: center;
     }
 
+    body,html {
+        margin: 0;
+        padding: 0;
+    }
+    
+
     header{
         flex-direction:column;
     }
@@ -293,9 +300,14 @@ footer ul li a{
     }
 
     .personagem img{
-        width: 130%;
-        height: 700px;
+        min-width: 780px;
+        height: auto;
         align-items: center;
+    }
+    img{
+        width: 100%;
+        padding: 0;
+        margin:0;
     }
 
     footer{
