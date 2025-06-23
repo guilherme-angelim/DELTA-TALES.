@@ -270,11 +270,19 @@ footer ul li a{
 
     header{
         flex-direction:column;
+        max-width: 100%;
+
     }
 
     .header-font{
         flex-direction: column;
         gap:8px;
+    }
+
+    #home img{
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
     }
 
     #recepcao{
@@ -300,12 +308,14 @@ footer ul li a{
     }
 
     .personagem img{
-        min-width: 780px;
+        min-width: 320px;
+        max-width: 800px;
         height: auto;
         align-items: center;
     }
     img{
         width: 100%;
+        max-width: 800px;
         padding: 0;
         margin:0;
     }
