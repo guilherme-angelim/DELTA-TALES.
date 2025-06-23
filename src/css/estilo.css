@@ -250,11 +250,24 @@ footer ul li a{
     flex-wrap: wrap;
 
 }
-
+.contato p{
+    margin-top: 10px;
+    font-size:1.3rem;
+}
+.contato p:hover{
+    color:red;
+    cursor: pointer;
+}
+h3{
+    font-size:1.5rem;
+}
+.redes-sociais ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:1.3rem;
+}
 #facebook:hover{
  color:rgb(0, 81, 255);
- transform: scale(1.05);
- text-shadow:rgb(21, 220, 255);
 }
 
 #instagram:hover{
