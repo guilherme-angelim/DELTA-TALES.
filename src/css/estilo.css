@@ -68,14 +68,26 @@ header.scrolled #home img{
 header.scrolled .header-font {
     margin-top:0;
 }
-
+#home{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: 0;      
+    padding-bottom: 0;
+}
 #home img{
+    max-width: 650px;
     width: 100%;
     height: 150px;
-    margin-bottom: 10px;
+    margin-bottom:0;
     border-radius: 30px;
+    display:block;
     object-fit: cover;
     transition: all 0.3s ease;
+}
+.header-font{
+    margin-top:0;
+    padding-top:0;
 }
 .header-font li a{
     font-family: 'DeterminationMono', monospace;
@@ -255,19 +267,7 @@ footer ul li a{
 }
 
 @media (width <=1024px) {
-    .menu-header {
-        width: 100%;
-        height: 100vh;
-        /* acima de tudo */
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: -100%;
-        gap: 0;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-    }
+
 
     body,html {
         margin: 0;
@@ -283,12 +283,11 @@ footer ul li a{
 
     .header-font{
         flex-direction: column;
-        gap:8px;
+        gap:15px;
     }
 
     #home img{
-        max-width: 100%;
-        min-width: 100%;
+        max-width: 480px;
         height: auto;
     }
 
