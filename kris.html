@@ -28,10 +28,13 @@
         </header>
 
 
-
+        <!-- imagem do personagem -->
         <div class="personagem">
+            <!-- picture é obrigatório para funcionar o srcset -->
             <picture>
+                <!-- caso a página esteja em 1010px ou menos = a certa imagem -->
                 <source media="(max-width: 1010px)" srcset="./src/assets/textkris.png">
+                <!-- imagem caso a página seja maior que 1010px-->
                 <img src="./src/assets/kris.png" alt="">
             </picture>
         </div>
