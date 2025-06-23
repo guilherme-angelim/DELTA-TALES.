@@ -254,8 +254,8 @@ footer ul li a{
     margin-top: 10px;
     font-size:1.3rem;
 }
-.contato p:hover{
-    color:red;
+.contato p span:hover{
+    
     cursor: pointer;
 }
 h3{
