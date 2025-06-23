@@ -250,12 +250,20 @@ footer ul li a{
     flex-wrap: wrap;
 
 }
-.contato p{
+.contato ul li{
     margin-top: 10px;
-    font-size:1.3rem;
 }
-.gmail:hover{
 
+.contato ul li a{
+    font-size:1.5rem;
+}
+
+.contato ul li a span{
+    font-size: 1.3rem;
+    color:white;
+}
+#contato:hover{
+ color:rgb(250, 0, 0);
 }
 h3{
     font-size:1.5rem;
@@ -275,6 +283,15 @@ h3{
 
 #twitter:hover{
     color: rgb(255, 21, 21);
+}
+
+.direitos p{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
