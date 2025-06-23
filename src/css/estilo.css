@@ -243,11 +243,26 @@ footer ul li a{
     display:flex;
     justify-content: space-around;
     padding: 15px;
+    gap:30px;
     /* irá alinhar o texto no topo, não no centro */
     text-align: flex-start;
     padding: 15px 25px;
     flex-wrap: wrap;
 
+}
+
+#facebook:hover{
+ color:rgb(0, 81, 255);
+ transform: scale(1.05);
+ text-shadow:rgb(21, 220, 255);
+}
+
+#instagram:hover{
+    color:orange;
+}
+
+#twitter:hover{
+    color: rgb(255, 21, 21);
 }
 
 
