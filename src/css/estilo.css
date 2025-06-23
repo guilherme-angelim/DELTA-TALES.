@@ -44,6 +44,7 @@ body {
 
 
 header{
+    gap: 10px;
     background:black;
     color:white;
     padding:20px;
@@ -86,7 +87,7 @@ header.scrolled .header-font {
     transition: all 0.3s ease;
 }
 .header-font{
-    margin-top:0;
+    margin-top:10px;
     padding-top:0;
 }
 .header-font li a{
