@@ -226,10 +226,10 @@ margin-left:10px;
 footer{
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    margin-top: 20px;
+    margin-top: auto;
     width: 100%;
-    padding:20px;
-    flex: 1;
+    /* importante para ficar o mesmo para todos */
+    padding:20px 0;
 }
 
 
@@ -246,7 +246,11 @@ footer ul li a{
 .footer-content{
     display:flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
+    /* irá alinhar o texto no topo, não no centro */
+    text-align: flex-start;
+    padding: 10px 20px;
+    flex-wrap: wrap;
 
 }
 
@@ -330,16 +334,18 @@ footer ul li a{
 
     footer{
         display:flex;
-        flex:1;
+        flex-direction: column;
+        padding:10px;
+        
     }
     .footer-content{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
+        display: flex;
         text-align: center;
-        gap: 15px;
-        padding:20px;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
     }
+
 
     
 }
