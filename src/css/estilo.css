@@ -1,103 +1,122 @@
+/* font do google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 
+/* font externa */
 @font-face {
     font-family: 'DeterminationMono';
     src: url('../fonts/DeterminationMonoWebRegular-Z5oq.ttf') format('truetype');
-  }
-
-*{
-margin:0;
-padding:0;
-box-sizing: border-box;
-
 }
-html{
+
+/* reset universal (zera todos os valores) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* suavização ao scrollar */
+}
+
+html {
     scroll-behavior: smooth;
 }
 
-html, body{
-    height:100%;
-    display:flex;
+/* definindo estrutura das páginas */
+html,
+body {
+    height: 100%;
+    display: flex;
     flex-direction: column;
     min-height: 110vh;
 }
 
+/* personalizando o body */
 body {
-    margin:0;
+    margin: 0;
+    /* adicionando o gif como fundo */
     background: url('../assets/fundo.gif') no-repeat center center fixed;
+    /* cobrir toda a tela */
     background-size: cover;
-    min-height: 100vh; 
+    min-height: 100vh;
     padding: 0;
     color: white;
     text-align: center;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
+    /* esconder barra horizontal */
     overflow-x: hidden;
 
-  }
-
-  #container {
-    flex:1;
-    display:flex;
-    flex-direction:column;
-  }
-
-
-
-header{
-    gap: 10px;
-    background:black;
-    color:white;
-    padding:20px;
-    display:flex;
-    justify-content: center;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    width:100%
 }
 
-header .scrolled{
+#container {
+    /* faz com que o header fique no topo */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* personalizando o header */
+header {
+    gap: 10px;
+    background: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%
+}
+
+/* header quando scrollado */
+header .scrolled {
     padding: 10px 20px;
 }
 
-header.scrolled #home img{
-    height:0;
-    opacity:0;
+/* esconde imagem quando scrollado */
+header.scrolled #home img {
+    height: 0;
+    opacity: 0;
     transition: all 0.3s ease;
 }
 
 header.scrolled .header-font {
-    margin-top:0;
+    margin-top: 0;
 }
-#home{
+
+#home {
     display: flex;
-  justify-content: center;
-  align-items: center;
-    margin-bottom: 0;      
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
     padding-bottom: 0;
 }
-#home img{
+
+#home img {
     max-width: 650px;
     width: 100%;
     height: 150px;
-    margin-bottom:0;
+    margin-bottom: 0;
     border-radius: 30px;
-    display:block;
+    display: block;
     object-fit: cover;
     transition: all 0.3s ease;
 }
-.header-font{
-    margin-top:10px;
-    padding-top:0;
+
+.header-font {
+    margin-top: 10px;
+    padding-top: 0;
 }
-.header-font li a{
+
+.header-font li a {
+    /* utulizando font family da font externa */
     font-family: 'DeterminationMono', monospace;
 }
-header.scrolled #home img{
-    height:0;
+
+header.scrolled #home img {
+    height: 0;
     opacity: 0;
-    transition:all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 header nav ul {
@@ -106,9 +125,10 @@ header nav ul {
     margin: 10px;
     display: flex;
     gap: 80px;
-    font-family:Determination Mono;
+    font-family: Determination Mono;
 }
 
+/* lista do header */
 header nav ul li a {
     color: #bdbdbd;
     text-decoration: none;
@@ -118,12 +138,11 @@ header nav ul li a {
 
 }
 
-
+/* estilização do nome de cada personagem ao passar o mouse */
 #kris:hover {
     color: rgb(21, 220, 255);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
-    text-shadow:rgb(21, 220, 255);
 
 }
 
@@ -131,7 +150,6 @@ header nav ul li a {
     color: rgb(36, 180, 0);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
-    text-shadow:rgb(36, 180, 0);
 
 }
 
@@ -139,29 +157,22 @@ header nav ul li a {
     color: rgb(223, 0, 204);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
-    text-shadow:rgb(223, 0, 204);
 }
 
 #lancer:hover {
     color: rgb(0, 38, 255);
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
-    text-shadow:rgb(0, 38, 255);
 }
 
 #noelle:hover {
     color: #D37D55;
     /* Muda cor ao passar o mouse */
     transform: scale(1.05);
-    text-shadow:#D37D55;
 }
 
 
-
-
-
-
-#recepcao{
+#recepcao {
     font-size: 4rem;
     margin: 10%;
     display: flex;
@@ -170,47 +181,55 @@ header nav ul li a {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.texto{
+.texto {
 
-    text-align: center;        /* Centraliza o texto */
-    max-width: 800px;          /* Largura máxima pra não ficar gigante */
-    margin: 0 auto 40px auto;  /* Centraliza na horizontal */
+    text-align: center;
+    /* Centraliza o texto */
+    max-width: 800px;
+    /* Largura máxima pra não ficar gigante */
+    margin: 0 auto 40px auto;
+    /* Centraliza na horizontal */
     font-size: 16px;
-    background-color: transparent; /* Fundo transparente */
-    color: rgb(252, 249, 249);              /* Mude se estiver com fundo escuro */
+    background-color: transparent;
+    /* Fundo transparente */
+    color: rgb(252, 249, 249);
+    /* Mude se estiver com fundo escuro */
     line-height: 1.6;
-    padding-bottom:100px;
-    margin-bottom:20px;
-}  
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+}
 
 
 h2 {
-   color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
-h2 span{
+h2 span {
+    /* trecho do h2 destacado terá sombra vermelha */
     text-shadow: 3px 3px 6px rgba(255, 0, 0, 0.8);
 }
 
-p{
+p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    font-size:1.3rem;
+    font-size: 1.3rem;
 }
 
-span{
-color: red;
-margin-left:10px;
+span {
+    /* trecho do span será vermelho */
+    color: red;
+    margin-left: 10px;
 }
 
 
 
 /* CAIXA DE TEXTO DOS PERNOSAGENS */
-.personagem{
-    display:flex;
-    justify-content:center;
+.personagem {
+    display: flex;
+    justify-content: center;
 
 }
-.personagem img{
+
+.personagem img {
     justify-content: center;
     width: 100%;
     align-items: center;
@@ -219,155 +238,190 @@ margin-left:10px;
 
 
 
-footer{
+footer {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     margin-top: auto;
     width: 100%;
     /* importante para ficar o mesmo para todos */
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 
-footer ul{
+footer ul {
+    /* retirando pontuações da lista */
     list-style: none;
 }
 
-footer ul li a{
-    color:white;
+footer ul li a {
+    /* estabelecendo a cor dos itens da lista e retirando pontuações */
+    color: white;
     text-decoration: none;
-    
+
 }
 
-.footer-content{
-    display:flex;
+.footer-content {
+    display: flex;
     justify-content: space-around;
     padding: 15px;
-    gap:30px;
+    gap: 30px;
     /* irá alinhar o texto no topo, não no centro */
     text-align: flex-start;
     padding: 15px 25px;
     flex-wrap: wrap;
 
 }
-.contato ul li{
+
+.contato ul li {
+    /* adicionando margem acima */
     margin-top: 10px;
 }
 
-.contato ul li a{
-    font-size:1.5rem;
+.contato ul li a {
+    font-size: 1.5rem;
 }
 
-.contato ul li a span{
+.contato ul li a span {
     font-size: 1.3rem;
-    color:white;
+    color: white;
 }
-#contato:hover{
- color:rgb(250, 0, 0);
+
+#contato {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
-h3{
-    font-size:1.5rem;
+
+#contato:hover {
+    color: rgb(250, 0, 0);
+    transform: scale(1.05);
 }
-.redes-sociais ul li{
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.redes-sociais ul li {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size:1.3rem;
-}
-#facebook:hover{
- color:rgb(0, 81, 255);
+    font-size: 1.3rem;
 }
 
-#instagram:hover{
-    color:orange;
+#facebook {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-#twitter:hover{
+#facebook:hover {
+    color: rgb(0, 81, 255);
+    transform: scale(1.05);
+}
+
+#instagram {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#instagram:hover {
+    color: orange;
+    transform: scale(1.05);
+}
+
+/* comando q faz funcionar as animações */
+#twitter {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#twitter:hover {
     color: rgb(255, 21, 21);
+    transform: scale(1.05);
 }
 
-.direitos p{
-  text-align: center;
-  margin-top: 30px;
-  font-size: 1.7;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.direitos p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.7;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-
+/* responsividade */
 @media (width <=1024px) {
 
 
-    body,html {
+    body,
+    html {
         margin: 0;
         padding: 0;
     }
-    
 
-    header{
-        flex-direction:column;
+
+    header {
+        flex-direction: column;
         max-width: 100%;
 
     }
 
-    .header-font{
+    .header-font {
         flex-direction: column;
-        gap:15px;
+        gap: 15px;
     }
 
-    #home img{
+    #home img {
         max-width: 480px;
         height: auto;
     }
 
-    #recepcao{
-        font-size:3.5rem;
-        margin:40px 0;
+    #recepcao {
+        font-size: 3.5rem;
+        margin: 40px 0;
         text-align: center;
         flex-direction: column;
     }
 
-    #recepcao span{
+    #recepcao span {
         text-align: center;
         flex-direction: column;
     }
-    
-    .texto{
-        font-size:1.4rem;
+
+    .texto {
+        font-size: 1.4rem;
     }
-    .personagem{
-        display:flex;
+
+    .personagem {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
 
-    .personagem img{
+    .personagem img {
         width: auto;
         height: 90vh;
         align-items: center;
-        display:block;
+        display: block;
     }
 
-    .personagem picture img{
+    .personagem picture img {
         margin: 0;
-        display:flex;
+        display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
         height: 90vh;
     }
 
-   
 
-    footer{
-        display:flex;
+
+    footer {
+        display: flex;
         flex-direction: column;
-        padding:10px;
-        
+        padding: 10px;
+
     }
-    .footer-content{
+
+    .footer-content {
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -376,6 +430,5 @@ h3{
     }
 
 
-    
-}
 
+}
