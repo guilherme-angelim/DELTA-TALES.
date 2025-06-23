@@ -305,28 +305,25 @@ footer ul li a{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
     }
 
     .personagem img{
-        min-width: 320px;
-        max-width: 800px;
-        height: auto;
+        width: auto;
+        height: 90vh;
         align-items: center;
+        display:block;
     }
 
     .personagem picture img{
-        width: 100%%;
-        max-width: 300px;
-        height:auto;
-        display:block;
-        margin: 0 auto;
+        margin: 0;
+        display:flex;
+        justify-content: center;
+        align-items: center;  
+        height: 90vh;
     }
-    img{
-        width: 100%;
-        max-width: 800px;
-        padding: 0;
-        margin:0;
-    }
+
+   
 
     footer{
         display:flex;
